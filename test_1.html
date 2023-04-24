@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- komentar -->
+<html>
+    <head>
+        <!-- für User nicht zu sehen Anweisung an Browser bzw. Suchmaschine-->
+        
+    
+        <meta charset="utf-8">
+        <title>Meine Erste HTML Seite</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Meine tolle Musik tausch börse">
+        <meta name="author" content="meine Firma">
+        <meta name="language" content="DE">
+        <meta name="revisit" content="14 days">
+        <title>Document</title>
+        <style>
+            *{ 
+                border-radius: 10px;                                                  
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 30px;
+                box-sizing: border-box;
+            }
+            :root{ /* variablen auf root ebene deklariene */
+                    --meineFarbe:DeepPink; /* variablnname ist --meineFarbe */
+                    
+            }
+            /* kommentar in css */
+            div{
+                 width: 100px;
+                 height: 100px;
+                 background-color: blue;
+                 margin-bottom: 10px;
+            }
+            .meinName {
+                background: silver;
+            }
+            .pinkeFarbe{
+                background-color: var(--meineFarbe); /* variable --meineFarbe */ 
+            }
+            .my_Border{
+                border: 2px solid rgb(195, 157, 8);
+            }
+            section{
+                background-color: black;
+            }
+            #speziell_1{
+                color: white;
+            }
+            #speziell_2{
+                color: chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div class="meinName my_Border"></div>
+        <div class="pinkeFarbe"></div>
+        <section id="speziell_1">
+            meine Saction 
+        </section>
+        <section id="speziell_2" class="pinkeFarbe" style="background-color: aquamarine;">
+            meine Saction 
+        </section>
+    </body>
+    
+</html>
